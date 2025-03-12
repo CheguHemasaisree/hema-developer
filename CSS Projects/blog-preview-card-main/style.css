@@ -1,0 +1,85 @@
+@import url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf,);
+@font-face {
+    font-family: Figtree-Italic-Variable;
+    src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(47, 88%, 63%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.container{
+    width:30vw;
+    background-color: #fff;
+    text-align:center;
+    border-radius: 6px; 
+    box-shadow: 5px 5px; 
+    border:1px solid #000;
+}
+.container1{
+    padding:17px;
+    height:360px;
+}
+.music_img{
+    width:26vw;
+    border-radius:10px;
+}
+.button{
+    width:30%;
+    background-color:hsl(47, 88%, 63%);
+    color:hsl(0, 0%, 7%);
+    position:relative;
+    left:-86px;
+    top:10px;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 800;
+    border:none;
+    font-size:9px;
+    font-family: 'figatree';
+}
+.para{
+    position:relative;
+    left:-76px;
+    top:16px;
+    font-size:10px;
+    font-family: 'figatree';
+}
+.heading3{
+    position:relative;
+    right:15px;
+    top:32px;
+    font-weight:1000;
+    font-family: 'figatree';
+    color:hsl(0, 0%, 7%);
+}
+.para1 {
+    position: relative;
+    right: 0px;
+    top: 50px;
+    font-family: 'figatree';
+    color: hsl(0, 0%, 42%);
+    font-size: 13px;
+    text-align: left;
+}
+.human_img {
+    width: 17px;
+    position: relative;
+    left: -117px;
+    top: 63px;
+}
+.name {
+    position: relative;
+    left: -68px;
+    font-size: 10px;
+    font-weight: bold;
+    top: 43px;
+}
+

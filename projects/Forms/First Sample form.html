@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Sample Form</title>
+</head>
+<body>
+    <center><h3>Request for a White Paper</h3></center>
+    <p>Please fill out the form. If you have any questions, Please email <a href="mailto:white_paper@ektron.com">white_paper@ektron.com</a></p>
+    <fieldset>
+        <legend>Details </legend>
+    <form action="/action.php" method="post">
+        
+        <label for="fn">First Name:</label>
+        <input type="text" name="fn" id="fn"><br/><br/>
+        <label for="ln">Last Name:</label>
+        <input type="text" name="ln" id="ln"><br/><br/>
+        <label for="cn">Company Name:</label>
+        <input type="text" name="cn" id="cn"><br/><br/>
+        <label for="cop">Company/Personal Website:</label>
+        <textarea name="cop" id="cop"></textarea><br/><br/>
+        <label for="em">Email:</label>
+        <input type="email" name="em" id="em"><br/><br/>
+        <label for="pn">Phone Number:</label>
+        <input type="number" name="pn" id="pn">
+        <label for="ext">Ext:</label>
+        <input type="number" name="ext" id="ext"><br/><br/>
+        <label for="states">Please select your state</label>
+        <select name="states" id="states">
+            <option disabled selected value>--Select an Option--</option>
+            <option value="AP">Andhrapardesh</option>
+            <option value="KN">Karnataka</option>
+            <option value="MH">Maharastra</option>
+            <option value="TG">Telegana</option>
+            <option value="TN">Tamilnadu</option>
+            <option value="KR">Kerala</option>
+        </select>
+        <br/><br/>
+        <p>Please select your Gender?</p>
+        <input type="radio" name="gender" id="m" value="Male">
+        <label for="m">Male</label>
+        <input type="radio" name="gender" id="f" value="Female">
+        <label for="f">Female</label>
+        <p>Please select the papers you want?</p>
+        <input type="checkbox" name="paper" id="a2" value="a2paper">
+        <label for="a2">A2 Paper</label>
+        <input type="checkbox" name="papaer" id="a3" value="a3paper">
+        <label for="a3">A3 Paper</label>
+        <input type="checkbox" name="paper" id="a4" value="a4paper">
+        <label for="a4">A4 Paper</label>
+        <input type="checkbox" name="paper" id="a5" value="a5paper">
+        <label for="a5">A5 Paper</label><br/><br/>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments"></textarea><br/><br/>
+        <label for="upload">Please upload your AAdhar Card</label>
+        <input type="file" name="upload" id="upload"><br/><br/>
+        <label for="upload">Please upload your Pan Card</label>
+        <input type="file" name="upload" id="upload"><br/><br/>
+        <button>Request White Paper</button>
+
+    </form>
+</fieldset>
+</body>
+</html>

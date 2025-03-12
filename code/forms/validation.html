@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+</head>
+<body>
+    <form action="main.php" method="post">
+       <!--validation with required field-->
+        <input type="text" name="fn" placeholder="Enter your name"  required><br/><br/>
+        <input type="email" placeholder="enter your email" name="em" required><br/><br/>
+        <input type="password" placeholder="enter your password" name="pw" required><br/><br/>
+        <!--Password with condition-->
+        <input type="password" placeholder="enter your password" minlength="6"><br/><br/>
+        <!-- password with condition and with our own error message
+        <input type="password" placeholder="enter your password" name="pw" minlength="6" message="please enther the password with 6 digits"><br/><br/> -->
+        <input type="password" placeholder="enter your password" maxlength="8"><br/><br/>
+        <!--Password condition with min and max-->
+        <input type="password" placeholder="enter your password" max="10" min="6"><br/><br/>
+        <input type="radio" name="gender" id="M">
+        <label for="M">Male</label>
+        <input type="radio" name="gender" id="F">
+        <label for="F">Female</label>
+        <br/><br/>
+        <input type="text" name="nm" placeholder="enter your name" value="shekar" readonly><br/><br/>
+        <!--regular Expressions-->
+        <input type="number" placeholder="please enter your number" name="pn" pattern="^[0-9]{10}$"><br/><br/>
+        
+        <button>submit</button>
+    </form>
+</body>
+</html>

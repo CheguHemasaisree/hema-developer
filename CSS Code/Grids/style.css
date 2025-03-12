@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.parent{
+    border:1px solid red;
+    height:400px;
+    width:400px;
+    display:grid;
+    grid-template-columns:200px 200px;
+}
+.child{
+    color:white;
+    background-color: red;
+    border:1px solid white;
+    font-size:20px;
+    place-items: center;
+}
+.child1{
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+.child2{
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end:4;
+}

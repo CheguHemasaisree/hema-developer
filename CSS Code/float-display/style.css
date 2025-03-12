@@ -1,0 +1,67 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.doremon_img{
+    float:right;
+}
+.child{
+    height:100px;
+    width:100px;
+    background-color: red;
+    color: white;
+    margin:20px;
+    font-size:20px;
+}
+.child1{
+    float:left;
+}
+.child2{
+    float:left;
+}
+.child3{
+    float:left;
+}
+.display_child{
+    height:100px;
+    width:100px;
+    background-color: red;
+    color: white;
+    margin:20px;
+    font-size:20px;
+}
+.display_child1{
+    display:inline-block;
+    visibility: hidden;
+}
+.display_child2{
+    display:inline-block;
+}
+.display_child3{
+    display:inline-block;
+}
+.flex_parent{
+    height:400px;
+    width:400px;
+    padding-top:20px;
+    display:flex;
+    border:1px solid red;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:10px;
+   
+}
+.flex_child{
+    height:100px;
+    width:100px;
+    background-color: red;
+    color:white;
+    font-size:20px;
+    border:1px solid white;
+    text-align: center;
+    padding-top:37px;
+   
+}

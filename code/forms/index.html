@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--Normal creation of forms-->
+    <form action="main.php">
+        <input type="text" placeholder="Enter your name" ><br/><br/>
+        <input type="email" placeholder="Enter your email"><br/><br/>
+        <input type="password" placeholder="enter your password"><br/><br/>
+        <button>Submit</button>
+    </form>
+    <br/><br/>
+    <!--creation forms with names-->
+    <form action="main.php">
+        Name:<input type="text" ><br/><br/>
+        Email:<input type="email"><br/><br/>
+        Password:<input type="password"><br/><br/>
+        <button>submit</button>
+    </form>
+    <br/><br/>
+    <!--creation of forms with name field which helps to store or pass the data to backend-->
+    <form action="main.php">
+        Name:<input type="text" name="nm"><br/><br/>
+        Email:<input type="email" name="em"><br/><br/>
+        Password:<input type="password" name="pw"><br/><br/>
+        <button>submit</button>
+    </form>
+    <br/><br/>
+    <!--form with method which helps to hide the data we have two types of methods get and post-->
+    <form action="main.php" method="post">
+        Name:<input type="text" name="nm"><br/><br/>
+        Email:<input type="email" name="em"><br/><br/>
+        Password:<input type="password" name="pw"><br/><br/>
+        <button>submit</button>
+    </form>
+    <br/><br/>
+    <!--forms with labels-->
+    <form action="main.php" method="post">
+    <label>Name:</label>
+    <input type="text" name="nm" placeholder="Enter your name"><br/><br/>
+    <label>Email:</label>
+    <input type="email" name="em" placeholder="Enter your email"><br/><br/>
+    <lable>Password:</lable>
+    <input type="password" name="pw" placeholder="Enter your password"><br/><br/>
+    <button>submit</button>
+    </form>
+    <br/><br/>
+    <!--forms with for and id attribute which helps to pass the data to back end here both for and id should be same-->
+    <form  action="main.php" method="post">
+    <label for="nm">Name:</label>
+    <input type="text" name="nm" id="nm" placeholder="Enter your name"><br/><br/>
+    <label for="em">Email:</label>
+    <input type="email" name="em" id="em" placeholder="Enter your email"><br/><br/>
+    <lable for="pw">Password:</lable>
+    <input type="password" name="pw" id="pw" placeholder="Enter your password"><br/><br/>
+    <button>submit</button>
+    </form>
+    <br/><br/>
+    <!--forms with field set and legend which helps to create border and text to the forms-->
+    <form action="main.php" method="post">
+    <fieldset>
+    <legend>Registration form</legend>
+    <label for="nm">Name:</label>
+    <input type="text" name="nm" id="nm" placeholder="Enter your name"><br/><br/>
+    <label for="em">Email:</label>
+    <input type="email" name="em" id="em" placeholder="Enter your email"><br/><br/>
+    <lable for="pw">Password:</lable>
+    <input type="password" name="pw" id="pw" placeholder="Enter your password"><br/><br/>
+    <button>submit</button>
+    </fieldset>
+    </form>
+    <br/><br/>
+    <!--Different types of input field buttons-->
+    <form action="/action.php" method="post">
+        <input type="date" name="dt" id="dt"><br/><br/>
+        <input type="time" name="ti" id="ti"><br/><br/>
+        <input type="datetime-local" name="dt" id="dt"><br/><br/>
+        <input type="number" name="nu" id="nu" placeholder="please enter number"><br/><br/>
+        <input type="file" name="fy" id="fy"><br/><br/>
+        <input type="color" name="col" id="col"><br/><br/>
+        <input type="month" name="mon" id="mon"><br/><br/>
+        <input type="range" name="rn" id="rn"><br/><br/>
+        <input type="url" name="url" id="url" placeholder="please enter a url"><br/><br/>
+        <input type="search" name="search" id="search" placeholder="search"><br/><br/>
+        <input tupe="week" name="week" id="week" placeholder="enter a week"><br/><br/>
+        <input type="hidden" name="hidden" id="hidden"><br/><br/>
+        <input type="button" value="button"/><br/><br/>
+        <input type="submit" value="submit button"><br/><br/>
+        <input type="reset" value="reset button"><br/><br/>
+    </form>
+    <br/><br/>
+    <!--radio buttons-->
+    <form action="main.py">
+    <input type="radio" name="gender" id="m" value="Male">
+    <label for="m">Male</label>
+    <input type="radio" name="gender" id="f" value="Female">
+    <label for="f">Female</label>
+    <!--Question for radio button-->
+    <p>Dose cat have 4 legs?</p>
+    <input type="radio" name="que" id="T" value="True">
+    <label for="T">True</label>
+    <input type="radio" name="que" id="F" value="False">
+    <label for="F">False</label>
+    </form>
+    <br/><br/>
+    <!--Checkbox-->
+    <form action="main.py">
+    <input type="checkbox" name="lang" id="tel" value="Telugu">
+    <label for="tel">Telugu</label>
+    <input type="checkbox" name="lang" id="hi" value="Hindi">
+    <label for="hi">Hindi</label>
+    <input type="checkbox" name="lang" id="eng" value="English">
+    <label for="eng">English</label>
+    <!--Question for checkbox-->
+    <p>Select the Coursers you know?</p>
+    <input type="checkbox" name="course" id="ht" value="html">
+    <label for="ht">HTML</label>
+    <input type="checkbox" name="course" id="css" value="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="course" id="js" value="javascript">
+    <label for="js">Javascript</label>
+    </form>
+    <br/><br/>
+    <!--text area-->
+    <label for="add">Enter your address</label>
+    <textarea name="add" id="add"></textarea>
+    <br/><br/>
+    <!--Dropdown-->
+    <label>Please select your state</label>
+    <!--sample dropdown-->
+    <select>
+        <option>Andharapradesh</option>
+        <option>Karnataka</option>
+        <option>Teleagana</option>
+        <option>Tamilnadu</option>
+        <option>Kerala</option>
+        <option>Maharastra</option>
+    </select>
+    <br/><br/>
+    <!--dropdown with name&values -->
+    <label>Please select your state</label>
+    <select name="state">
+        <option value="AP">Andharapradesh</option>
+        <option value="KN">Karnataka</option>
+        <option value="TG">Teleagana</option>
+        <option value="TN">Tamilnadu</option>
+        <option value="KR">Kerala</option>
+        <option value="MH">Maharastra</option>
+    </select>
+    <br/><br/>
+    <!--Dropdown with names,values,for and id-->
+    <label for="state">Please select your state</label>
+    <select name="state" id="state">
+        <option value="AP">Andharapradesh</option>
+        <option value="KN">Karnataka</option>
+        <option value="TG">Teleagana</option>
+        <option value="TN">Tamilnadu</option>
+        <option value="KR">Kerala</option>
+        <option value="MH">Maharastra</option>
+    </select>
+    <br/><br/>
+    <!--sub dropdowns-->
+    <label for="state">Please select your state</label>
+    <select name="state" id="state">
+        <optgroup label="South States">
+                <option value="AP">Andharapradesh</option>
+                <option value="KN">Karnataka</option>
+                <option value="TG">Teleagana</option>
+                <option value="TN">Tamilnadu</option>
+                <option value="KR">Kerala</option>
+                <option value="MH">Maharastra</option>
+        </optgroup>
+        <optgroup label="North States">
+            <option value="MP">Madhya Pradesh</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="OD">Odisha</option>
+            <option value="BR">Bihar</option>
+       </optgroup>    
+    </select>
+    <br/><br/>
+    <!--Writing the blank dropdown first-->
+    <label for="states">Please select your state</label>
+    <select name="states" id="states">
+                <option disabled selected value>--select an option--</option>
+                <option value="AP">Andharapradesh</option>
+                <option value="KN">Karnataka</option>
+                <option value="TG">Teleagana</option>
+                <option value="TN">Tamilnadu</option>
+                <option value="KR">Kerala</option>
+                <option value="MH">Maharastra</option>
+    </select>
+</body>
+</html>
