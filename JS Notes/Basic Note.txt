@@ -1,0 +1,39 @@
+Javascript:- Javascript is a scripting language which is used to build the functionality of the web page
+javascript is run on the browser by using an engine called js engine
+each and every browser has its own js engine for eg(google chrome has its own engine called v8)
+javascript can be run on the client side(Browser) i.e client-side javascript
+javascript can be run on the server side(node-js) i.e server-side javascript
+
+
+java vs javascript:
+javascript is intially developed by Brendan Eich in 1995 december
+it was intailly named as "live script" but due to the popularity of java at that timr it was named as javascript
+java follows the concept of object-oriented programming where as javascript follows modular-programming
+
+how to include javascript into the html
+to include the javascript into html we have two ways
+1.internal js:-write the code between two tags of script in the bottom of the body
+     eg:-   <script>
+                console.log("Hello World")
+            </script>  
+2.external js:-Here the file will be included externally with the filename followed by an extension .js(for eg:sript.js)  
+    eg:-script.js(file name)
+          console.log("Bye World")
+                call the file name into html in this ways
+                <script src=./script.js></script>
+
+comments in javascript:- comments are not read by an compilers/engines in any programming language it just used for the redability of the code there are two ways to declare the comments
+1.single line comment:-it is used to comment a single line it is represented by double slash //
+eg:-      //single line comment
+
+2.Multi line comment:-it used to comment multiple line comments together it is represented by /*---*/
+eg:-      /*This is
+            a multiline
+            comment*/
+
+
+Developer tools in rowser:-every browser provides a lot of developer tools which can be seen by inspect of the site
+eg:-open the website--->right click---->select inspect
+                                        (or)ctrl+shift+i
+
+
