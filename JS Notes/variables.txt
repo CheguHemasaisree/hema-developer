@@ -1,0 +1,63 @@
+variables:-javascript uses the variables are used to store the values.you can declare the variable by using var,let,const
+    eg:-var a=5;(or)
+        let a=5;(or)
+        const a=5;
+
+
+what is the difference between var let const?
+
+var:-var is a function scoped variable which is used to recdeclare,reassign and can also be used before intilization
+for eg:-  function(x){
+
+             if(true){
+                console.log(a)//can be used before intilization
+                var a=5;//this is the declaration of var
+                var a=25;//this is redeclaration of var
+                a=10;//this is re-assigning of var
+             }
+             console.log(a)
+         }
+        x();
+
+until 2015 javascript is used to use var variable.In 2015 javascript has introduced let and cons to declare the variable in new ways.
+
+let and const:-let and const are block scoped variables which cannot be access before intilization and redeclartion is also not possible but reassign is supported by var and reassign is not supported by const
+
+for eg:-    function(x){
+              if(true){
+                console.log(a);//this  is accessing before the intilization(shows undefined)
+                let a=5;//decalaration of variable let
+                a=40//re-assigning of let variable is possible
+                let a=10;//redeclaration of let is not possible(throws an error)
+                const a=10;//declaration of const variable
+                const a=50;//redeclartion of const variable(throws an error)
+                a=20;//re-assigning of const variable(throws an error)
+                console.log(a);
+              }
+            }
+            x();
+
+difference between var,let and const?
+
+            var                                                 let&const
+        1.it is function scoped variable                    1.it is a block scoped element
+        2.redeclaration of varaiable is possible            2.redeclaration of variable is not possible
+          for eg:-var a=5;                                  
+                  var a=10;
+        3.reassigning of the varaiable is possible          3.reassigning of variable is not supported by
+                                                              const but supported by var
+          for eg:-var a=25;
+                  a=56;
+        4.can access the varaible before intilization       4.cannot be accessed before intilization
+
+Basic default functions supported by browser are
+1.alert(message):-alert message is used show an alert message to the user
+eg:-alert("Happy New year");
+    alert("login sucessfully");
+2.confirm(question):-confirm is used to ask a question to the user for confirming his/her action
+eg:-confirm("are you sure you wnat to reload the page");
+    let x=confirm("are you sure want to delete the page");
+    console.log(x);
+
+
+                   
