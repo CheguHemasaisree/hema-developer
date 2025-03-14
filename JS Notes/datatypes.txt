@@ -1,0 +1,29 @@
+Datatypes:-javascript is dynamically typed language that means variables dosen't have any data types.Data types of variables changes from one data type to another Datatypes
+
+eg:-
+let a=5;
+console.log(typeof a); //number
+
+let a="prasad";
+console.log(typeof a); //string
+
+let a=true;
+console.log(typeof a); //boolean
+
+*javascript is a case senstive language
+*browsers of js engine will automatically insert the semicolon where there is no semicolon present
+
+javascript can even change the datatypes implict called implicti type casting
+eg:-
+let a=5+"5";
+console.log(a, typeof a); //55,string
+
+let a="prasad"+2;
+console.log(a, typeof a); //prasad2 string
+
+let a=1+true;
+console.log(a, typeof a); //2,number
+
+javascript datatypes are divided into two categories
+1.primitive datatypes
+2.non-primitive datatypes
