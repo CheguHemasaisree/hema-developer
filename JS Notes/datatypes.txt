@@ -70,5 +70,83 @@ console.log(Math.pow(2,3), 2**3) //8,8 --power can also be return in this way al
 
 ii.Strings:Strings are used to represent combination of alphabets,digits,symbols etc
    * it can be represented in '' (or) "" (or) ``
+   eg:-
+        let q="prasad";
+        console.log(typeof q,q); //string prasad
+                          or
+        let q="prasad" or 'prasad' or `prasad`
+        console.log(typeofq,q); //string prasad
+    * there is no difference between single quote and double quote
+    eg:-
+    q=25;
+    console.log("the value of q is q"); //the value of q is q
+    console.log("the value of q is" + q); //the value of q is 25
+    console.log(`the value of q is $ {q}`); //25
+
+    * the usage of backticks for string is called template literal.It is used for writing dynamic strings   without breaking the string
+    eg:-
+    let cost = 4, tax = 5,quantity=10
+    console.log(`The Total of buying ${quantity} apples with 
+    each cost ${cost} is ${quantity * cost} but also adds
+    the tax of ${tax} is ${(tax/100)*(cost*quantity)} `);
+
+there are so many string methods are avaliable such abs
+length -- returns length no:of characters in given string
+array -- string values starts with zero index
+concatenation -- string values starts with zero index
+uppercase -- converts to uppercase
+lowecase -- converts to lowercase
+startswith -- checks wheather it starts with the given string or not and returns boolean
+endswith -- checks wheather it ends with given string or not and returns boolean
+indexof -- returns indexof of first occurance of given value,last occurance of given value
+split -- divides the string based on delimiter and returns array
+slice -- retuens part of the string
+trim -- returns string after removing space at start and end of string
+eg:-
+let str="prasad";
+console.log(str.length); //6 -- length
+console.log(str[0]); //p -- array
+console.log(str[0]+str[1]);  //pr -- string concatenation
+console.log(str.toUpperCase()); //PRASAD -- uppercase
+console.log(str.toLowerCase()); //prasad -- lowercase
+console.log(str.startsWith("pr")); //true -- startWith
+console.log(str.endsWith("ke"));  //false -- endsWith
+console.log(str.indexOf('s')); // 3 -- index of the letter
+console.log(str.indexOf('a')); //2
+console.log(str.indexOf('a'), str.lastIndexOf('a')); //2 4
+console.log(str.indexOf('a',3),str.lastIndexOf('a')); //4 4
+str="js is so easy";
+console.log(str.split(' ')); //['js', 'is', 'so', 'easy'] -- split
+console.log(str.split('')); //['j', 's', ' ', 'i', 's', ' ', 's', 'o', ' ', 'e', 'a', 's', 'y']
+console.log(str.slice(2,5)); //is
+console.log("      prasad      " .trim()); //prasad -- trim
+console.log("    durga   Prasad    ".trim()); //durga parasd
+
+iii.Boolean:boolean returns true or false true menas returns 1 false means returns 0 mostly performed on conditions
+
+iv.undefined:undefined represents accidental absence of value
+eg:-
+let k;
+console.log(k);  // undefined
+console.log(k,typeof k); // undefined 'undefined'
+console.log(z); //error
+
+v.Null:null represents intentional absence of values
+eg:-
+let n=null;
+console.log(n);
+* in javascript it is possible to access values before declaration called hoisting it is not possible with let and const
+eg:-
+console.log(m); //undefined
+var m=5;
+
+
+2.non-primitive-datatypes:these datatypes also called referenced data tupes they are
+i.functions
+ii.arrays
+iii.objects
+
+
+
    
 

@@ -44,3 +44,50 @@ console.log(Math.pow(2,3)); //8 -- power
 console.log(Math.pow(2,3), 2**3) //8,8 --power can also be return in this way also
 
 //strings
+let q="prasad";
+console.log(typeof q,q); //string prasad
+q=25;
+console.log("the value of q is q"); //the value of q is q
+console.log("the value of q is" + q); //the value of q is 25
+console.log(`the value of q is $ {q}`); //25
+
+let cost = 4, tax = 5,quantity=10
+console.log(`The Total of buying ${quantity} apples with 
+    each cost ${cost} is ${quantity * cost} but also adds
+     the tax of ${tax} is ${(tax/100)*(cost*quantity)} `);
+
+//there are so many string methods into javascript
+
+let str="prasad";
+console.log(str.length); //6 -- length
+console.log(str[0]); //p -- array
+console.log(str[0]+str[1]);  //pr -- string concatenation
+console.log(str.toUpperCase()); //PRASAD -- uppercase
+console.log(str.toLowerCase()); //prasad -- lowercase
+console.log(str.startsWith("pr")); //true -- startWith
+console.log(str.endsWith("ke"));  //false -- endsWith
+console.log(str.indexOf('s')); // 3 -- index of the letter
+console.log(str.indexOf('a')); //2
+console.log(str.indexOf('a'), str.lastIndexOf('a')); //2 4
+console.log(str.indexOf('a',3),str.lastIndexOf('a')); //4 4
+str="js is so easy";
+console.log(str.split(' ')); //['js', 'is', 'so', 'easy'] -- split
+console.log(str.split('')); //['j', 's', ' ', 'i', 's', ' ', 's', 'o', ' ', 'e', 'a', 's', 'y']
+console.log(str.slice(2,5)); //is
+console.log("      prasad      " .trim()); //prasad -- trim
+console.log("    durga   Prasad    ".trim()); //durga parasd
+
+//undefined
+let k;
+console.log(k);  // undefined
+console.log(k,typeof k); // undefined 'undefined'
+//console.log(z); //error
+
+//null
+let n=null;
+console.log(n);
+//hoisting
+console.log(m); //undefined
+var m=5;
+
+
