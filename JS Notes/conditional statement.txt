@@ -1,0 +1,96 @@
+Decision-making statement:-These statements are used to control dynamic flow according to the conditions
+
+i.if:-if is used to make the decision based on condition. It is present in a block and will be executed only if the condition is true
+syntax:-
+        if(condition)
+        {
+            //statements;
+        }
+eg:-
+    let n="raj"
+    if(n=="raj")
+    {
+        console.log("hello raj");
+    }
+
+ii.if-else:-if-else is used to change the flow of the statements to execute based on the condition result
+    * if the condition is true it will execute the if block else it will execute the else block
+syntax:-
+        if(condition)
+        {
+            //statements;
+        }
+        else
+        {
+            statements;
+        }
+eg:-
+    age=5;
+    if(age>=18)
+    {
+        console.log("you are eligible to vote");
+    }
+    else
+    {
+        console.log("you are not eligible to vote");
+    }
+
+iii.if-else-if:-here it will have multiple blocks where multiple conditions are present
+syntax:-
+        if(condition)
+        {
+            //statements;
+        }
+        else-if(condition)
+        {
+            //statements;
+        }
+        -
+        -
+        -
+        -
+        so on.....
+        else
+        {
+            //statements;
+        }
+eg:-
+    n=5;
+    if(n>0)
+    {
+        console.log(`${n} is positive`);
+    }
+    else if(n<0)
+    {
+        console.log(`${n} is neagtive`);
+    }
+    else
+    {
+        console.log(`${n} is neither postive nor negative`);
+    }
+    * if-else-if is not ideal sttement when there are multiple conditions to execute in such type of cases we have an alternative called as switch
+
+iv.switch:-switch is used to take an expression or value and the execute the multiple conditions as cases.If the value is matched with the case the it will execute the case statement
+syntax:-
+        switch(value)
+        {
+            case value1:statement; break;
+            case value2:statement; break;
+            case value3:statement; break;
+            default value: statement;
+        }
+eg:-
+    let user="student"
+    switch(user)
+    {
+        case "admin":console.log("hello admin");break;
+        case "parent":console.log("hello parent");break;
+        case "teacher":console.log("hello teacher");break;
+        case "student":console.log("hello student");break;
+        default:console.log("please enter a valid input")
+    }
+    
+Break:-Break is a key word which is used to break the current statement and will be execute out of the block
+
+Default:-Default is used to perform or execute when above statements are not statisified it will print the default value statement
+
