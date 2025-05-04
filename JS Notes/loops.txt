@@ -1,0 +1,45 @@
+Loops:- Loops are used to execute the statements again and again until the condition is false.Each and every repeatation is called iteration there are main 2 types
+1.Entry contrl Loops
+2.Exit control Loops
+
+1.Entry Control loops:-Entry control loop is used to check the condition at the starting of the loop
+   i.while
+   ii.for
+
+2.exit control loop:-Exit control loops are used to check the condition at the end of the loop
+   i.do-while
+
+i.While:-while is used to check the condition at the starting of the loop and execute the certain statements until the condition is false
+syntax:-
+       intilization;
+       while(condition)
+       {
+        //statements;
+        //updation;
+       }
+
+i.do-while:do-while is exit control loop which is used to check the condition at the end of the and executes the statements before the condition is true
+syntax:-  
+        intilization;
+        do
+        {
+            //statements;
+            //updation;
+        }
+        while(condition);
+
+ii.for loop:-for loop is an entry control loop which is used to iterate the statements again and again until the condition is false.The adavantage of for loop is it is used to intilization condition and updation in a single line
+syntax:
+        for(intilization;condition;updatetion;)
+        {
+            //statements;
+        }
+in for loop we have two types
+i.for-of
+ii.for-in
+
+i.for-of:-for-of is used to iterate the value of array elements and it prvides each time array elements.
+
+ii.for-in:for-in is used to iterate the value of array elements and it provides array index. For in is ideal for objects.
+
+
