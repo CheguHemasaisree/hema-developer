@@ -5,8 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="shortcut icon" href="./Assets/p_letter_image.png" type="image/x-icon">
+    
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#qualification">Qualification</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#expereience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+   </header>
+
+   <main>
+
+    <section id="about">
+       <div class="intro">
+            <h1>Hello, I'm Hannah</h1>
+            <h2>A Passionate Front-End Developer</h2>
+            <p>
+             I specialize in creating beautiful, responsive, and user-friendly websites using modern front-end technologies.
+             With a keen eye for detail and a strong focus on user experience, I bring ideas to life through clean and efficient code.
+            </p>
+       </div>
+       <div class="personal_image">
+            <img src="./Assets/Hannah.png" alt="user_image" width="300">
+       </div>
+       <div class="buttons">
+            <button>Download CV</button>
+            <button>Contact Me</button>
+       </div>
+    </section>
+    
+    <section id="qualification">Qualification</section>
+    <section id="skills">skills</section>
+    <section id="projects">Projects</section>
+    <section id="expereience">Experience</section>
+    <section id="achievements">Achievements</section>
+
+    
+    <section id="contact">
+     <form action="/action.php" method="post">
+          <label for="nm">Name</label>
+          <input type="text" placeholder="enter your name" id="nm" name="name" requried>
+          <br><br>
+          <label for="em">Email</label>
+          <input type="email" placeholder="enter your email id" id="em" name="email" requried>
+          <br><br>
+          <label for="pn">Phone Number</label>
+          <select>
+               <option value="+91">+91</option>
+               <option value="+123">+123</option>
+               <option value="+456">+456</option>
+          </select>
+          <input type="number" placeholder="enter your number" id="pn" requried>
+          <br><br>
+           <label for="msg">Message</label>
+          <textarea placeholder="enter your message" rows="5" cols="30" id="msg"></textarea>
+          <br><br>
+          <input type="submit" value="submit">
+     </form>
+    </section>
+
+  </main>
+
+  <footer>
+    This is a footer part
+  </footer>
 </body>
 </html>
